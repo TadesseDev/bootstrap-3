@@ -1,8 +1,35 @@
-.containerOne{
-height: 25px;
-background-color:aqua;
+.column2,.column1,.oddCol,.evenCol{
+    color: white;
+    padding: 2vh 2vw;
 }
-.containertwo{
-    height: 25px;
-    background-color:darkcyan;
+.oddCol h3,.evenCol h3{
+    width: fit-content;
+    margin: auto;
+    padding: 25%;
+    font-size: 0.8em;
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1em;
+    line-height: 0.5em;
+}
+.column1{
+    background-color: rgb(170, 168, 168);
+}
+.column2{
+    background-color: rgb(219, 219, 219);
+}
+.firstRow{
+    padding-bottom: 5px;
+}
+.evenCol{
+    background-color: rgb(170, 168, 168);
+}
+.oddCol{
+    background-color: rgb(219, 219, 219);
+}
+.firstRow{
+    margin-bottom: 5vh;
 }
