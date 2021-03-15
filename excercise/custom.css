@@ -1,19 +1,13 @@
-.column2,.column1,.oddCol,.evenCol{
+.column2,.column1,.footerCol{
     color: white;
     padding: 2vh 2vw;
 }
-.oddCol h3,.evenCol h3{
-    width: fit-content;
-    margin: auto;
-    padding: 25%;
-    font-size: 0.8em;
-}
+
 h2{
     font-size: 1.2em;
 }
 h3{
-    font-size: 1em;
-    line-height: 0.5em;
+    width: fit-content;
 }
 .column1{
     background-color: rgb(170, 168, 168);
@@ -24,12 +18,46 @@ h3{
 .firstRow{
     padding-bottom: 5px;
 }
-.evenCol{
+
+.footerCol{
     background-color: rgb(170, 168, 168);
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.oddCol{
+.footerCol h3{
+    display: flexbox;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+.footerCol:nth-child(odd){
     background-color: rgb(219, 219, 219);
 }
 .firstRow{
     margin-bottom: 5vh;
+}
+.clearFixEx:nth-child(2n+1){
+    background-color: rgb(238, 236, 236);
+}
+.clearFixEx:nth-child(2n){
+    background-color: rgb(134, 134, 134);
+}
+.row{
+    margin-bottom: 15px;
+}
+.customColor{
+    background-color: rgb(209, 9, 209);
+    border: none;
+    padding:1% 2%;
+}
+.customColor:hover{
+    background-color: rgb(182, 8, 182);
+}
+.btn{
+    margin-bottom: 3px;
+}
+img{
 }
