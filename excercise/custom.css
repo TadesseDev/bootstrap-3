@@ -1,25 +1,31 @@
-.column2,.column1,.footerCol{
+.column2,
+.column1,
+.footerCol {
     color: white;
     padding: 2vh 2vw;
 }
 
-h2{
+h2 {
     font-size: 1.2em;
 }
-h3{
+
+h3 {
     width: fit-content;
 }
-.column1{
+
+.column1 {
     background-color: rgb(170, 168, 168);
 }
-.column2{
+
+.column2 {
     background-color: rgb(219, 219, 219);
 }
-.firstRow{
+
+.firstRow {
     padding-bottom: 5px;
 }
 
-.footerCol{
+.footerCol {
     background-color: rgb(170, 168, 168);
     padding: 0px;
     height: 100px;
@@ -27,37 +33,76 @@ h3{
     justify-content: center;
     align-items: center;
 }
-.footerCol h3{
+
+.footerCol h3 {
     display: flexbox;
     width: fit-content;
     height: fit-content;
     align-self: center;
 }
-.footerCol:nth-child(odd){
+
+.footerCol:nth-child(odd) {
     background-color: rgb(219, 219, 219);
 }
-.firstRow{
+
+.firstRow {
     margin-bottom: 5vh;
 }
-.clearFixEx:nth-child(2n+1){
+
+.clearFixEx:nth-child(2n+1) {
     background-color: rgb(238, 236, 236);
 }
-.clearFixEx:nth-child(2n){
+
+.clearFixEx:nth-child(2n) {
     background-color: rgb(134, 134, 134);
 }
-.row{
+
+.row {
     margin-bottom: 15px;
 }
-.customColor{
+
+.customColor {
     background-color: rgb(209, 9, 209);
     border: none;
-    padding:1% 2%;
+    padding: 1% 2%;
 }
-.customColor:hover{
+
+.customColor:hover {
     background-color: rgb(182, 8, 182);
 }
-.btn{
+
+.btn {
     margin-bottom: 3px;
 }
-img{
+
+.nav li a:hover {
+    background-color: rgb(154, 207, 181);
+}
+
+.mobileImage {
+    height: 30px;
+    overflow: hidden;
+}
+
+.mobileImage img {
+    height: 100%;
+    width: auto;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .hidde {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    .nav-justified li a {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobileImage {
+        height: 0px;
+    }
 }
