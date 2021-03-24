@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>navbar excercise</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="col-xs-3 col-sm-2 navbar-brand">
+                <a href="#"> Logo Here</a>
+            </div>
+            <ul class="col-xs-9 col-sm-7 nav navbar-nav nav-pills ">
+                <li><a href="#">menu one</a></li>
+                <li><a href="#">menu one</a></li>
+                <li><a href="#">menu one</a></li>
+                <li><a href="#">menu one</a></li>
+                <li><a href="#">menu one</a></li>
+            </ul>
+            <span class=" col-xs-4 col-sm-3 navbar-right">
+                <div class="navbar-btn dropDown">
+<!-- dropdown image -->
+                </div>
+            <button class="btn btn-default navbar-btn btn-primary">
+                Notification
+                <span class="badge" style="background: red; color: white">20</span>
+            </button>
+            <button class="btn btn-default navbar-btn">
+                Info
+                <span class="label label-success">lable here</span>
+            </button>
+            </span>
+            <div class="submenu">
+            </div>
+        </div>
+    </nav>
+
+    <script src="../jquery-1.12.0.mini/jquery-1.12.0.min.js"></script>
+    <script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(".dropDown").on("click", function() {
+            if ($('.navbar .navbar-nav').hasClass('show')) {
+                $('.navbar .navbar-nav').removeClass('show');
+                $('.submenu').html("");
+            } else {
+                $('.navbar .navbar-nav').addClass('show');
+                $('.submenu').html(`
+                <ul class="nav nav-pills ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Make A request</a></li>
+                <li><a href="#">Exit</a></li>
+            </ul>
+                `);
+            }
+        });
+    </script>
+</body>
+
+</html>

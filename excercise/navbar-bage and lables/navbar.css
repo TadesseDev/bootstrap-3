@@ -1,0 +1,130 @@
+.container-fluid {
+    max-width: 1300px;
+    min-width: 350px;
+}
+
+.col-xs-0 {
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.navbar-btn {
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.col-xs-6 {
+    background-color: lawngreen;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar {
+    max-height: 10px;
+    overflow: visible;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropDown {
+    width: 40px;
+    height: 35px;
+    background-color: lightgray;
+    padding: 6px 10px;
+    background-image: url(../images/mobile.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 615px) {
+    .navbar-nav {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .navbar-right {
+        margin-left: -100%;
+        width: 70%;
+    }
+    .navbar-brand {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 616px) {
+    .dropDown {
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    .submenu {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav li a {
+        padding: 10px 10px;
+    }
+}
+
+.submenu {
+    position: absolute;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    background-color: rgb(243, 245, 247);
+    margin-left: -15px;
+    margin-right: -20px;
+    box-shadow: rgb(168, 167, 167) 0px 5px 5px;
+}
+
+.submenu ul {
+    width: 100%;
+}
+
+.submenu li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.submenu li:hover {
+    background-color: rgb(241, 238, 238);
+    box-shadow: darkgray 0px 0px 5px;
+}
+
+.submenu li:last-child {
+    background-color: rgb(143, 82, 82);
+}
+
+.submenu li:last-child :hover {
+    background-color: rgb(228, 2, 2);
+}
+
+.submenu li a {
+    color: black;
+    font-size: 1.2em;
+    width: 100%;
+    margin-right: 0px;
+}
+
+.submenu li a:hover {
+    background-color: transparent;
+}
